@@ -1,4 +1,4 @@
 # hepatoxicity-prediction
 
-## Project for study subject: Uczenie Maszynowe w Projektowaniu Leków
+Project for studies subject: Uczenie Maszynowe w Projektowaniu Leków
 
