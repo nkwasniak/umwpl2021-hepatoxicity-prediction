@@ -27,5 +27,5 @@ class TestConverter(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-    # convert_fingerprint_CSV('hepatotoxicity_pTD50_KlekFP_ready_set')
     # convert_fingerprint_CSV('hepatotoxicity_ALT_KlekFP_ready_set')
+    # convert_fingerprint_CSV('hepatotoxicity_pTD50_KlekFP_ready_set')
