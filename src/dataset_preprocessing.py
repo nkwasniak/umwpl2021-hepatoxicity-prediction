@@ -14,7 +14,7 @@ def preprocessing_data(file_name, first_col):
 
     df.drop(columns=zero_col, inplace=True)
 
-    df[first_col] = np.log(df[first_col])
+    df[first_col] = np.log1p(df[first_col])
 
     df.to_csv("../data/hepatotoxicity_" + first_col + "_preprocessing_and_analyst.csv", index=False)
 
@@ -37,7 +37,7 @@ class TestConverter(unittest.TestCase):
         self.assertEqual(True, self.data[columns].sum(axis=1).min() > 0)
 
     def test_first_column_natural_log(self):
-        first_column = np.log(pd.read_csv("../data/" + self.file_name + ".csv", header=0, index_col=False, usecols=[0]))
+        first_column = np.log1p(pd.read_csv("../data/" + self.file_name + ".csv", header=0, index_col=False, usecols=[0]))
         self.assertEqual(True, self.data['ALT'].equals(first_column['ALT']))
 
 
