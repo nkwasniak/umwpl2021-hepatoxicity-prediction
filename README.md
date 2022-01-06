@@ -6,6 +6,10 @@ Project for subject: Uczenie Maszynowe w Projektowaniu Leków
 
 Python will be used to predict hepatoxicity. The environment setup steps are shown below:
 
+If you would like to run python scripts from _/src_ directory you must install requirements by: `pip install -r requirements.txt`
+
+If you would like to run jupyter notebook, then at beginning you must do a few steps:
+
 1. Install [miniconda](https://docs.conda.io/en/latest/miniconda.html) following the instructions for your operating system.
 2. Download this repository: `git clone https://github.com/nkwasniak/umwpl2021-hepatoxicity-prediction`.
 3. Install environment from the YAML file: `conda env create -f environment.yml`
