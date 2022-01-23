@@ -1,5 +1,0 @@
-,Model,Params,MSE,MAE,R2
-0,"SVR(C=25.0, coef0=0.01, gamma='auto', kernel='sigmoid', tol=0.01)","{'C': 25.0, 'coef0': 0.01, 'degree': 3, 'gamma': 'auto', 'kernel': 'sigmoid', 'tol': 0.01}",0.1766947280040934,0.2909805638084767,0.7107563375801872
-1,"Lasso(alpha=0.005, random_state=12345)","{'alpha': 0.005, 'random_state': 12345}",0.3402754962476418,0.3527976765974057,0.44297981112313045
-2,"SGDRegressor(alpha=0.0, random_state=12345)","{'alpha': 0.0, 'learning_rate': 'invscaling', 'random_state': 12345}",0.3518570628706602,0.3592776802560499,0.42402115409674024
-3,LinearRegression(),{},3.203270752176994e+26,5347826332049.095,-5.243652567044774e+26
