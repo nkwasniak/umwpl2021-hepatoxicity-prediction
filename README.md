@@ -5,8 +5,7 @@ Project for subject: Uczenie Maszynowe w Projektowaniu Leków
 ## About project
 
 Main goal of project is to help find bits of fingerprints, which have important and unimportant impact to decide if combination is hepatotoxicity. 
-In project there was used Klekota-Roth fingerprints in `.csv` files, stored in [`data`](/data). To find best hyperparams for 4 regression models I use grid search with 5-Kfold cross validation [`Searching best hyperparams`](/notebooks/gridsearch_hyperparameters.ipynb).  
-
+In project there was used Klekota-Roth fingerprints in `.csv` files, stored in [`data`](/data). To find best hyperparams for 4 regression models I use grid search with 5-Kfold cross validation [`Searching best hyperparams`](/notebooks/gridsearch_hyperparameters.ipynb). \
 
 Each model got r^2 score: 
 ![R2 score foreach model](/explonations/r2_score_for_each_model.png "R2 score for each model").
