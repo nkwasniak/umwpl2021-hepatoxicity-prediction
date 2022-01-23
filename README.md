@@ -10,7 +10,23 @@ In project there was used Klekota-Roth fingerprints in `.csv` files, stored in [
 #### Each model got r^2 score: 
 
 ![R2 score foreach model](/explonations/r2_score_for_each_model.png "R2 score for each model").  
-To sum up I used LIME to explanation results for SVR (the best model of all). 
+Prediction [`plots`](/explonations/predictions/) all of 5 SVR models.
+To sum up I used LIME to [`explanations`](/explonations) results for 5 SVR models (SVR was the best model of 4).  
+In result I get table, which precisely shows which fingerprint bits had an impact on the result of prediction my models
+
+|unimportant_bits|important_bits  |
+|----------------|----------------|
+|KRFP1524 <= 0.00|KRFP4142 <= 0.00|
+|KRFP670 <= 0.00 |KRFP1799 <= 0.00|
+|KRFP3177 <= 0.00|KRFP2716 <= 0.00|
+|KRFP232 <= 1.00 |KRFP1707 <= 0.00|
+|KRFP3915 <= 0.00|KRFP4810 <= 0.00|
+|KRFP2428 <= 0.00|KRFP1566 <= 0.00|
+|KRFP1799 <= 0.00|KRFP3285 <= 0.00|
+|KRFP3222 <= 1.00|KRFP2882 <= 0.00|
+|KRFP2714 <= 0.00|KRFP4015 <= 0.00|
+|KRFP2306 <= 0.00|KRFP3010 <= 0.00|
+
 
 ## Environment Setup
 
