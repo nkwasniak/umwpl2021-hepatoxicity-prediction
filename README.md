@@ -5,13 +5,13 @@ Project for subject: Uczenie Maszynowe w Projektowaniu Leków
 ## About project
 
 Main goal of project is to help find bits of fingerprints, which have important and unimportant impact to decide if combination is hepatotoxicity. 
-In project there was used Klekota-Roth fingerprints in `.csv` files, stored in [`data`](/data). To find best hyperparams for 4 regression models I use grid search with 5-Kfold cross validation [`Searching best hyperparams`](/notebooks/gridsearch_hyperparameters.ipynb). 
+In project there was used Klekota-Roth fingerprints in `.csv` files, stored in [`data`](/data). To find best hyperparams for 4 regression models I use grid search with double 5-Kfold cross validation [`Searching best hyperparams`](/notebooks/gridsearch_hyperparameters.ipynb). 
 
 #### Each model got r^2 score: 
 
-![R2 score foreach model](/explonations/r2_score_for_each_model.png "R2 score for each model").  
+![R2 score foreach model](/explonations/r2_score_for_each_model.png "R2 score for each model"). So the best model all of 4 was SVR. That was used in further part of exploration.  
 Prediction [`plots`](/explonations/predictions/) all of 5 SVR models.
-To sum up I used LIME to [`explanations`](/explonations) results for 5 SVR models (SVR was the best model of 4).  
+To sum up I used LIME to [`explanations`](/explonations) results for 5 SVR models.  
 In result I get table, which precisely shows which fingerprint bits had an impact on the result of prediction my models
 
 |unimportant_bits|important_bits  |
