@@ -38,6 +38,14 @@ In result I get table, which precisely shows which fingerprint bits had an impac
 |KRFP2714 <= 0.00|KRFP4015 <= 0.00|
 |KRFP2306 <= 0.00|KRFP3010 <= 0.00|
 
+## Project structure
+
+* [`data`](/data) : contains data used to predict alt parameter, model pickles and result of gridSerach for each regression model
+* [`explonations`](/explonations) : contains `.html` files generated from LIME library to visualize how much impact bit of figerprint have to predict result.
+* [`predictions`](/explonations/predictions) contains `.png` files with prediction using 5 SVR models.
+* [`notebooks`](/notebooks) : contains `.ipynb` files with all process to get best solution
+* [`presentations`](/presentations) : contains `.pdf` files with initial and final presentation
+* [`src`](/src) : contains `.py` files with scripts to convert initial data to more user-friendly
 
 ## Environment Setup
 
